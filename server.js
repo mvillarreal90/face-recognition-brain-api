@@ -8,11 +8,7 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 const db = knex({
-  client: 'pg',
-  connection: {
-    host : 'postgresql-shallow-17033',
-    ssl: true
-  }
+  client: 'pg'
 });
 
 const app = express();
